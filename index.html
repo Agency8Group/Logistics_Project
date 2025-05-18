@@ -317,7 +317,6 @@
                             <tr
                                 class="hover:bg-gray-700"
                                 onclick="toggleAccordion(2)"
-                                style="border: 3px solid #ccc"
                             >
                                 <!-- 강조 border 
                              style="border: 3px solid #ccc" -->
@@ -437,15 +436,34 @@
                                     </div>
                                 </td>
                             </tr>
-
-                            <tr class="hover:bg-gray-700">
-                                <td class="py-3 px-4">1차 트러블슈팅</td>
+                            <tr
+                                class="hover:bg-gray-700"
+                                onclick="toggleAccordion(3)"
+                                style="border: 3px solid #ccc"
+                            >
+                                <td class="py-3 px-4 flex items-center">
+                                    1차 트러블슈팅
+                                </td>
                                 <td class="py-3 px-4">
                                     [dreame] 트러블내용 상세 취합 및 개선점 파악
                                 </td>
                                 <td class="py-3 px-4">05/19 ~ 05/23 (4주차)</td>
+
                                 <td class="py-3 px-4">
-                                    <span class="status 예정">예정</span>
+                                    <span class="status 진행">진행</span>
+                                    <span
+                                        class="ml-2 text-gray-400 detail-click border grey-600"
+                                        >(상세내용)👆</span
+                                    >
+                                </td>
+                            </tr>
+
+                            <!-- ❌ 기존: id="accordion-2" → ✅ 수정: id="accordion-3" -->
+                            <tr id="accordion-3" class="accordion-detail">
+                                <td colspan="4" class="py-3 px-4 bg-gray-800">
+                                    <div>
+                                        <p>진행중 _ 진척도 체크 필요</p>
+                                    </div>
                                 </td>
                             </tr>
 
